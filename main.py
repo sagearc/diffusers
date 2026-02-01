@@ -12,7 +12,7 @@ from diffusers.pipelines.qwenimage.pipeline_output import QwenImagePipelineOutpu
 
 
 def patched_call(
-    self,
+    self: QwenImageEditPlusPipeline,
     image=None,
     prompt=None,
     negative_prompt=None,
